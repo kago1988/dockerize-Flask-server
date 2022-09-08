@@ -1,6 +1,6 @@
 # Encapsulate a Flask server in a docker container 
 
-This tutorial is inspired by the YouTuber "Tech Primer" and shows how to encapsulate a NodeJS Server in a docker container. 
+This tutorial is inspired by the YouTuber "SelfTuts" and shows how to encapsulate a NodeJS Server in a docker container. 
 
 ## Git clone the application
 
