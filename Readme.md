@@ -1,6 +1,6 @@
-# Encapsulate a Node.JS server in a docker container 
+# Encapsulate a Flask server in a docker container 
 
-This tutorial is inspired by fireship.io and shows how to encapsulate a NodeJS Server in a docker container. 
+This tutorial is inspired by the YouTuber "Tech Primer" and shows how to encapsulate a NodeJS Server in a docker container. 
 
 ## Git clone the application
 
@@ -59,7 +59,7 @@ This tutorial is inspired by fireship.io and shows how to encapsulate a NodeJS S
 
         
         // run a docker container in daemon mode with ports exposed
-        docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
+        docker run -p 5002:5001 <image-id>
 
 
 
