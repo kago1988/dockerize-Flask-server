@@ -58,7 +58,7 @@ This tutorial is inspired by the YouTuber "SelfTuts" and shows how to encapsulat
         docker build -t <imageName:version> dockerFilePath
 
         
-        // run a docker container in daemon mode with ports exposed
+        // run a docker container locally with ports exposed
         docker run -p 5002:5001 <image-id>
 
 
