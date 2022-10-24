@@ -3,12 +3,12 @@ import logging as logger
 logger.basicConfig(level="DEBUG")
 
 
-flaskAppInstance = Flask(__name__)
+app = Flask(__name__)
 
+@app.route('/status', methods=['GET']) 
+def get_status():
+    return "Hello World!"
 
-
-if __name__ == '__main__':
-
-    logger.debug("Starting Flask Server")
-    from api import *
-    flaskAppInstance.run(host="0.0.0.0",port=5001,debug=True,use_reloader=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080)) # Erhalte den Port aus der Environment Variable, sonst benutze 8080 
+    app.run(host='0.0.0.0', port=port) # Starte die App
